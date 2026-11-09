@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#3D5A40"><title>菜单 · 小林咖啡</title><link rel="stylesheet" href="style.css?v=2"><style>
+.menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 52px 28px; }
+.drink-card { min-width: 0; }
+.drink-title { justify-content: flex-start; flex-wrap: wrap; gap: 4px 14px; }
+.drink-title h2 { min-width: 0; }
+@media (max-width: 700px) {
+  .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 16px; }
+  .drink-image { aspect-ratio: 1; }
+  .drink-title { margin-top: 14px; flex-wrap: nowrap; align-items: flex-start; gap: 8px; }
+  .drink-title h2 { flex: 0 1 auto; overflow-wrap: anywhere; }
+  .drink-title > span { flex: 0 0 auto; }
+  .drink-card:last-child h2 { font-size: clamp(14px, 4vw, 19px); }
+  .drink-card:last-child h2 span { white-space: nowrap; }
+}
+</style></head><body><header class="site-header wrap"><a class="brand" href="index.html">小林咖啡<span> · </span></a><nav aria-label="主导航"><a href="index.html">首页</a><a href="menu.html" aria-current="page">菜单</a><a href="stores.html">门店</a></nav></header><main><section class="wrap page-intro"><p class="eyebrow">小林咖啡 · 本周菜单</p><h1>菜单</h1></section><section class="wrap menu-grid" aria-label="本周菜单"><article class="drink-card"><div class="drink-image"><img src="图片/美式.png" alt="美式" loading="lazy"></div><div class="drink-title"><h2>美式</h2><span>18</span></div><p>深烘豆，热饮，黑咖啡，杯口有一层细油脂</p></article><article class="drink-card"><div class="drink-image"><img src="图片/拿铁.png" alt="拿铁" loading="lazy"></div><div class="drink-title"><h2>拿铁</h2><span>24</span></div><p>牛奶和浓缩，表面一朵简单的拉花</p></article><article class="drink-card"><div class="drink-image"><img src="图片/燕麦拿铁.png" alt="燕麦拿铁" loading="lazy"></div><div class="drink-title"><h2>燕麦拿铁</h2><span>26</span></div><p>燕麦奶代替牛奶，奶泡更细，颜色偏浅</p></article><article class="drink-card"><div class="drink-image"><img src="图片/手冲.png" alt="手冲" loading="lazy"></div><div class="drink-title"><h2>手冲</h2><span>28</span></div><p>浅烘单品豆，透明玻璃分享壶，琥珀色</p></article><article class="drink-card"><div class="drink-image"><img src="图片/柠檬红茶.png" alt="柠檬红茶" loading="lazy"></div><div class="drink-title"><h2>柠檬红茶</h2><span>16</span></div><p>冰饮，红茶加两片鲜柠檬，杯壁有水珠</p></article><article class="drink-card"><div class="drink-image"><img src="图片/桂花乌龙.png" alt="桂花乌龙" loading="lazy"></div><div class="drink-title"><h2>桂花乌龙</h2><span>18</span></div><p>热饮，乌龙茶汤上漂几粒干桂花</p></article><article class="drink-card"><div class="drink-image"><div class="image-placeholder" aria-hidden="true"><span>小林咖啡</span></div></div><div class="drink-title"><h2>栗子拿铁<span>（店庆限定）</span></h2><span>28</span></div><p>拿铁上撒栗子碎，旁边放两三颗糖炒栗子</p></article></section></main><footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html">小林咖啡<span> · </span></a><p>街角的一杯好咖啡</p><p>公众号「小林咖啡」（示例）</p></div></footer></body></html>
